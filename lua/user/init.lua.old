@@ -1,0 +1,10 @@
+require'mason-lspconfig'.rust_analyzer.setup{
+  settings = {
+    ['rust-analyzer'] = {
+      checkOnSave = {
+        command = "clippy",
+        arguments = {"--all-targets", "--all-features"}
+      },
+    }
+  }
+}
