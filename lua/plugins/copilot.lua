@@ -1,4 +1,4 @@
 return {
   "github/copilot.vim",
-  event = "BufEnter"
+  event = "BufReadPost",
 }
